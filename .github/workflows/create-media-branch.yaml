@@ -18,6 +18,7 @@ jobs:
           git config --global user.email "edwin@rndr.studio"
           git config --global user.name "Edwin Jakobs"
           git checkout --orphan media
+          git reset HEAD -- .
           git add [a-z-]/images/*.txt
           git commit -m "auto generated media"
           git push -f origin media
